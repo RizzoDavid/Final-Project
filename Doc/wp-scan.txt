@@ -13,7 +13,7 @@ _______________________________________________________________
 _______________________________________________________________
 
 [32m[+][0m URL: http://192.168.1.110/wordpress/
-[32m[+][0m Started: Wed Mar  2 17:44:31 2022
+[32m[+][0m Started: Wed Mar  2 17:46:09 2022
 
 Interesting Finding(s):
 
@@ -82,13 +82,13 @@ Interesting Finding(s):
 
 [32m[+][0m WPVulnDB API OK
  | Plan: free
- | Requests Done (during the scan): 1
+ | Requests Done (during the scan): 0
  | Requests Remaining: 23
 
-[32m[+][0m Finished: Wed Mar  2 17:44:51 2022
-[32m[+][0m Requests Done: 3377
-[32m[+][0m Cached Requests: 26
-[32m[+][0m Data Sent: 906.866 KB
-[32m[+][0m Data Received: 796.523 KB
-[32m[+][0m Memory used: 308.73 MB
-[32m[+][0m Elapsed time: 00:00:20
+[32m[+][0m Finished: Wed Mar  2 17:46:27 2022
+[32m[+][0m Requests Done: 3381
+[32m[+][0m Cached Requests: 22
+[32m[+][0m Data Sent: 907.91 KB
+[32m[+][0m Data Received: 550.537 KB
+[32m[+][0m Memory used: 309.898 MB
+[32m[+][0m Elapsed time: 00:00:18
