@@ -8,18 +8,27 @@
 - Suggestions for Going Further
 
 ### Network Topology
-_TODO: Fill out the information below._
-
 The following machines were identified on the network:
-- Name of VM 1
+- Elk
   - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Name of VM 2
+  - **Purpose**:SIEM 
+  - **IP Address**: 192.168.1.100
+- Capstone
   - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
+  - **Purpose**: Vulnerable machine used to test alerts
+  - **IP Address**: 192.168.1.105
+- Kali
+  - **Operating System**: Kali Linux
+  - **Purpose**: Standard kali install used to attack other machines
+  - **IP Address**: 192.168.1.90
+- Target1
+  - **Operating System**:
+  - **Purpose**: Exposes vulnerable WordPress Server that sends logs to ELK
+  - **IP Address**: 192.168.1.110
+- Target2
+  - **Operating System**:
+  - **Purpose**: A more difficult WordPress target. Server that sends logs to ELK
+  - **IP Address**: 192.168.1.115
 
 ### Description of Targets
 _TODO: Answer the questions below._
@@ -35,23 +44,23 @@ Traffic to these services should be carefully monitored. To this end, we have im
 #### Name of Alert 1
 _TODO: Replace `Alert 1` with the name of the alert._
 
-Alert 1 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
+HTTP Request Size Monitor is implemented as follows:
+  - **Metric**: http.request.bytes
+  - **Threshold**: 3500
   - **Vulnerability Mitigated**: TODO
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
 #### Name of Alert 2
-Alert 2 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
+Excessive HTTP Errors is implemented as follows:
+  - **Metric**: http.response.status_code
+  - **Threshold**: 400
   - **Vulnerability Mitigated**: TODO
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
 #### Name of Alert 3
-Alert 3 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
+CPU Usage Monitor is implemented as follows:
+  - **Metric**: system.process.cpu.total.pct
+  - **Threshold**: 0.5
   - **Vulnerability Mitigated**: TODO
   - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
 
