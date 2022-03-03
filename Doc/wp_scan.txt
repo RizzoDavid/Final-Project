@@ -1,0 +1,94 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.7.8
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[32m[+][0m URL: http://192.168.1.110/wordpress/
+[32m[+][0m Started: Wed Mar  2 17:44:31 2022
+
+Interesting Finding(s):
+
+[32m[+][0m http://192.168.1.110/wordpress/
+ | Interesting Entry: Server: Apache/2.4.10 (Debian)
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://192.168.1.110/wordpress/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access
+
+[32m[+][0m http://192.168.1.110/wordpress/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m http://192.168.1.110/wordpress/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.8.18 identified (Latest, released on 2022-01-06).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://192.168.1.110/wordpress/, Match: '-release.min.js?ver=4.8.18'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://192.168.1.110/wordpress/, Match: 'WordPress 4.8.18'
+
+[34m[i][0m The main theme could not be detected.
+
+
+[34m[i][0m No plugins Found.
+
+
+[34m[i][0m No themes Found.
+
+
+[34m[i][0m No Timthumbs Found.
+
+
+[34m[i][0m No Config Backups Found.
+
+
+[34m[i][0m No DB Exports Found.
+
+
+[34m[i][0m No Medias Found.
+
+
+[34m[i][0m User(s) Identified:
+
+[32m[+][0m steven
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m michael
+ | Found By: Author Id Brute Forcing - Author Pattern (Aggressive Detection)
+ | Confirmed By: Login Error Messages (Aggressive Detection)
+
+[32m[+][0m WPVulnDB API OK
+ | Plan: free
+ | Requests Done (during the scan): 1
+ | Requests Remaining: 23
+
+[32m[+][0m Finished: Wed Mar  2 17:44:51 2022
+[32m[+][0m Requests Done: 3377
+[32m[+][0m Cached Requests: 26
+[32m[+][0m Data Sent: 906.866 KB
+[32m[+][0m Data Received: 796.523 KB
+[32m[+][0m Memory used: 308.73 MB
+[32m[+][0m Elapsed time: 00:00:20
