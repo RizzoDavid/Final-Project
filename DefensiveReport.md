@@ -45,22 +45,22 @@ Traffic to these services should be carefully monitored. To this end, we have im
 Alert 1 is implemented as follows:
   - **Metric**: http.request.bytes
   - **Threshold**: 3500
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: Denial of Service
+  - **Reliability**: This alert generates some false positives because when the site is very busy it will alert, however using this allert will be able to deterime when it is time for an upgrade to allow for more traffic.
 
 #### Excessive HTTP Errors
 Alert 2 is implemented as follows:
   - **Metric**: http.response.status_code
   - **Threshold**: 400
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: Denial of Service
+  - **Reliability**: This alert does not generate as many false positives because it is looking for when the site replys to a user with an error. 
 
 #### CPU Usage Monitor
 Alert 3 is implemented as follows:
   - **Metric**: system.process.cpu.total.pct
   - **Threshold**: 0.5
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+  - **Vulnerability Mitigated**: Denial of Service
+  - **Reliability**: This alert generates some false positives because on more busy days this alert will pick up that the system is being used more. 
 
 
 ### Suggestions for Going Further (Optional)
