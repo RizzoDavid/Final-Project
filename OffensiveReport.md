@@ -41,10 +41,10 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag1{b9bbcb33e11b80be759c4e844862482d}`:
     - **Exploit Used**
       - _TODO: Identify the exploit used_
-      -  ```
-      -  cd /var/www/html 
-      -  grep -r flag 
-      -  ```
+```
+cd /var/www/html 
+grep -r flag 
+```
   - `flag2{fc3fd58dcdad9ab23faca6e9a36e581c}`: 
     - **Exploit Used**
       - _TODO: Identify the exploit used_
