@@ -30,7 +30,6 @@ You must inspect your traffic capture to answer the following questions:
    1. [matthijs.devries](/Img/Windows-Username.png)
 3. What are the IP addresses used in the actual infection traffic?
    1. 31.7.62.214
-   2. 
 4. As a bonus, retrieve the desktop background of the Windows host.
 
 ---
