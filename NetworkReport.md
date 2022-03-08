@@ -8,9 +8,11 @@ You must inspect your traffic capture to answer the following questions:
 2. What is the IP address of the Domain Controller (DC) of the AD network?
    1. `10.6.12.12`
 3. What is the name of the malware downloaded to the 10.6.12.203 machine?
-   - Once you have found the file, export it to your Kali machine's desktop.
+   1. [DesktopExport](/Img/Desktop-Export.png)
 4. Upload the file to [VirusTotal.com](https://www.virustotal.com/gui/). 
+   1. [MalwareUpload](/Img/Malware-Upload.png)
 5. What kind of malware is this classified as?
+   1. Trojan
 
 ---
 
